@@ -1,0 +1,101 @@
+/**** 전체 설정 ****/
+body {
+  background-color: rgb(218, 199, 234);
+
+  display: flex;
+  justify-content: center;
+}
+.main {
+  background-color: white;
+  border-radius: 15px;
+
+  width: 550px;
+  height: 87vh;
+  margin: 60px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/**** form 관련 설정 ****/
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 25px 10px 10px;
+}
+
+.add-input {
+  width: 300px;
+  height: 20px;
+  padding: 20px 5px;
+  margin-bottom: 10px;
+
+  border: none;
+  border-bottom: 1px solid black;
+
+  font-size: 20px;
+}
+
+.add-button {
+  border: none;
+  background-color: white;
+  color: plum;
+  font-size: 20px;
+}
+
+button,
+.checkbox {
+  cursor: pointer;
+}
+
+/**** list 관련 설정 ****/
+.list {
+  width: 400px;
+  height: 650px;
+  margin: 20px 0;
+
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+.list::-webkit-scrollbar {
+  width: 8px;
+}
+.list::-webkit-scrollbar-thumb {
+  background-color: plum;
+  border-radius: 10px;
+}
+.list::-webkit-scrollbar-track {
+  background-color: rgba(221, 160, 221, 0.2);
+  border-radius: 10px;
+}
+
+.list-container {
+  margin: 10px 0;
+  padding: 5px 0;
+
+  border-bottom: 1px solid plum;
+
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  align-items: center;
+}
+
+.list-text {
+  font-size: 18px;
+  margin: 0 10px;
+}
+.list-deletebtn {
+  border: none;
+  background-color: white;
+  color: plum;
+  font-weight: 700;
+}
